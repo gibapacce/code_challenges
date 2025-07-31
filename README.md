@@ -5,8 +5,8 @@ Este repositório contém soluções para diversos problemas clássicos de entre
 ## Estrutura do Projeto
 
 - `index.html` e `style.css`: Arquivos para visualização ou interface web (se aplicável).
-- `todos_exercios.js`: Script geral para manipulação ou execução dos exercícios.
-- Pastas de problemas (exemplo: `binary_search/`, `climbing_stairs/`, etc):
+- `scripts.js`: Script geral para manipulação ou execução dos exercícios (se aplicável).
+- Pastas de problemas em `challenges/` (exemplo: `binary_search/`, `climbing_stairs/`, etc):
   - `problem.txt`: Enunciado do problema.
   - `solution.js`: Solução implementada em JavaScript.
 
@@ -30,10 +30,9 @@ Este repositório contém soluções para diversos problemas clássicos de entre
 
 ## Como Usar
 
-1. Navegue até a pasta do problema desejado.
+1. Navegue até a pasta do problema desejado em `challenges/`.
 2. Leia o enunciado em `problem.txt`.
 3. Veja a solução proposta em `solution.js`.
-4. (Opcional) Utilize `todos_exercios.js` para executar ou testar as soluções de forma centralizada.
 
 ## Objetivo
 
