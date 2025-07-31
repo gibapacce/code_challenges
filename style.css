@@ -1,3 +1,17 @@
+/* Exibe problema e fluxo lado a lado */
+.problem-flow-row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.problem-flow-row .problem-summary {
+  flex: 1 1 40%;
+  min-width: 300px;
+}
+.problem-flow-row .flow-container {
+  flex: 2 1 60%;
+  min-width: 350px;
+}
 /* Centraliza o título Fluxo alinhado à esquerda, igual à div .problem-summary */
 .fluxo-title {
   margin-left: 0;

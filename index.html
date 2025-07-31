@@ -76,81 +76,82 @@
       </div>
 
       <div class="content">
-        <!-- 1. Valid Palindrome -->
         <div id="palindrome-string" class="flowchart active">
           <h2>1. Valid Palindrome (String)</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            A phrase is a palindrome if, after converting all uppercase letters
-            into lowercase letters and removing all non-alphanumeric characters,
-            it reads the same forward and backward. Alphanumeric characters
-            include letters and numbers.<br /><br />
-            Given a string s, return true if it is a palindrome, or false
-            otherwise.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code
-              >Input: s = "A man, a plan, a canal: Panama"<br />Output:
-              true</code
-            ><br />
-            Explanation: "amanaplanacanalpanama" is a palindrome.<br /><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: s = "race a car"<br />Output: false</code><br />
-            Explanation: "raceacar" is not a palindrome.<br /><br />
-            <strong>Example 3:</strong><br />
-            <code>Input: s = " "<br />Output: true</code><br />
-            Explanation: s is an empty string "" after removing non-alphanumeric
-            characters. Since an empty string reads the same forward and
-            backward, it is a palindrome.<br /><br />
-            <strong>Constraints:</strong><br />
-            1 <= s.length <= 2 * 10<sup>5</sup><br />
-            s consists only of printable ASCII characters.
-          </div>
-          <div class="flow-container">
-            <h3 class="fluxo-title">Fluxo</h3>
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Recebo uma string e preciso verificar se é palíndromo (igual
-                quando lida de trás pra frente)
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              A phrase is a palindrome if, after converting all uppercase
+              letters into lowercase letters and removing all non-alphanumeric
+              characters, it reads the same forward and backward. Alphanumeric
+              characters include letters and numbers.<br /><br />
+              Given a string s, return true if it is a palindrome, or false
+              otherwise.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code
+                >Input: s = "A man, a plan, a canal: Panama"<br />Output:
+                true</code
+              ><br />
+              Explanation: "amanaplanacanalpanama" is a palindrome.<br /><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: s = "race a car"<br />Output: false</code><br />
+              Explanation: "raceacar" is not a palindrome.<br /><br />
+              <strong>Example 3:</strong><br />
+              <code>Input: s = " "<br />Output: true</code><br />
+              Explanation: s is an empty string "" after removing
+              non-alphanumeric characters. Since an empty string reads the same
+              forward and backward, it is a palindrome.<br /><br />
+              <strong>Constraints:</strong><br />
+              1 <= s.length <= 2 * 10<sup>5</sup><br />
+              s consists only of printable ASCII characters.
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 ANÁLISE</h3>
-              <p>
-                O que é um palíndromo? Uma string que lida de trás para frente é
-                igual à original. Mas preciso ignorar maiúsculas/minúsculas e
-                caracteres especiais.
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🧹 LIMPEZA</h3>
-              <p>
-                1. Remover todos os caracteres não alfanuméricos com regex<br />
-                2. Converter tudo para minúsculas
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 REVERSÃO</h3>
-              <p>
-                Criar uma versão invertida da string limpa usando split(),
-                reverse(), join()
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>⚖️ COMPARAÇÃO</h3>
-              <p>A string limpa é igual à sua versão invertida?</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>
-                Se iguais → true (é palíndromo)<br />Se diferentes → false (não
-                é palíndromo)
-              </p>
+            <div class="flow-container">
+              <h3 class="fluxo-title">Fluxo</h3>
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Recebo uma string e preciso verificar se é palíndromo (igual
+                  quando lida de trás pra frente)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 ANÁLISE</h3>
+                <p>
+                  O que é um palíndromo? Uma string que lida de trás para frente
+                  é igual à original. Mas preciso ignorar maiúsculas/minúsculas
+                  e caracteres especiais.
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🧹 LIMPEZA</h3>
+                <p>
+                  1. Remover todos os caracteres não alfanuméricos com regex<br />
+                  2. Converter tudo para minúsculas
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 REVERSÃO</h3>
+                <p>
+                  Criar uma versão invertida da string limpa usando split(),
+                  reverse(), join()
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>⚖️ COMPARAÇÃO</h3>
+                <p>A string limpa é igual à sua versão invertida?</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>
+                  Se iguais → true (é palíndromo)<br />Se diferentes → false
+                  (não é palíndromo)
+                </p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -168,75 +169,76 @@
           </div>
         </div>
 
-        <!-- 2. Two Sum -->
         <div id="two-sum" class="flowchart">
           <h2>2. Two Sum</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given an array of integers nums and an integer target, return
-            indices of the two numbers such that they add up to target.<br /><br />
-            You may assume that each input would have exactly one solution, and
-            you may not use the same element twice.<br /><br />
-            You can return the answer in any order.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: nums = [2,7,11,15], target = 9<br />Output: [0,1]</code
-            ><br />
-            Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].<br /><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: nums = [3,2,4], target = 6<br />Output: [1,2]</code
-            ><br /><br />
-            <strong>Example 3:</strong><br />
-            <code>Input: nums = [3,3], target = 6<br />Output: [0,1]</code
-            ><br /><br />
-            <strong>Constraints:</strong><br />
-            2 <= nums.length <= 10<sup>4</sup><br />
-            -10<sup>9</sup> <= nums[i] <= 10<sup>9</sup><br />
-            -10<sup>9</sup> <= target <= 10<sup>9</sup><br />
-            Only one valid answer exists.
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Recebo um array de números e um target. Preciso encontrar dois
-                números que somam o target.
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given an array of integers nums and an integer target, return
+              indices of the two numbers such that they add up to target.<br /><br />
+              You may assume that each input would have exactly one solution,
+              and you may not use the same element twice.<br /><br />
+              You can return the answer in any order.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code
+                >Input: nums = [2,7,11,15], target = 9<br />Output: [0,1]</code
+              ><br />
+              Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].<br /><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: nums = [3,2,4], target = 6<br />Output: [1,2]</code
+              ><br /><br />
+              <strong>Example 3:</strong><br />
+              <code>Input: nums = [3,3], target = 6<br />Output: [0,1]</code
+              ><br /><br />
+              <strong>Constraints:</strong><br />
+              2 <= nums.length <= 10<sup>4</sup><br />
+              -10<sup>9</sup> <= nums[i] <= 10<sup>9</sup><br />
+              -10<sup>9</sup> <= target <= 10<sup>9</sup><br />
+              Only one valid answer exists.
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 ESTRATÉGIA</h3>
-              <p>
-                Se eu guardar os números já vistos, posso verificar rapidamente
-                se o complemento já apareceu.
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🗂️ ESTRUTURA</h3>
-              <p>Criar um objeto (hash map) para mapear números → índices</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 ITERAÇÃO</h3>
-              <p>
-                Para cada número do array:<br />
-                1. Calcular complemento = target - número atual<br />
-                2. Verificar se complemento já foi visto
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>❓ ENCONTROU?</h3>
-              <p>O complemento está no hash map?</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>
-                Se SIM → retornar [índice do complemento, índice atual]<br />
-                Se NÃO → guardar número atual e continuar
-              </p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Recebo um array de números e um target. Preciso encontrar dois
+                  números que somam o target.
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 ESTRATÉGIA</h3>
+                <p>
+                  Se eu guardar os números já vistos, posso verificar
+                  rapidamente se o complemento já apareceu.
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🗂️ ESTRUTURA</h3>
+                <p>Criar um objeto (hash map) para mapear números → índices</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 ITERAÇÃO</h3>
+                <p>
+                  Para cada número do array:<br />
+                  1. Calcular complemento = target - número atual<br />
+                  2. Verificar se complemento já foi visto
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>❓ ENCONTROU?</h3>
+                <p>O complemento está no hash map?</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>
+                  Se SIM → retornar [índice do complemento, índice atual]<br />
+                  Se NÃO → guardar número atual e continuar
+                </p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -254,69 +256,71 @@
           </div>
         </div>
 
-        <!-- 3. Palindrome Number -->
         <div id="palindrome-number" class="flowchart">
           <h2>3. Palindrome Number</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given an integer x, return true if x is a palindrome, and false
-            otherwise.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: x = 121<br />Output: true</code><br />
-            Explanation: 121 reads as 121 from left to right and from right to
-            left.<br /><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: x = -121<br />Output: false</code><br />
-            Explanation: From left to right, it reads -121. From right to left,
-            it becomes 121-. Therefore it is not a palindrome.<br /><br />
-            <strong>Example 3:</strong><br />
-            <code>Input: x = 10<br />Output: false</code><br />
-            Explanation: Reads 01 from right to left. Therefore it is not a
-            palindrome.<br /><br />
-            <strong>Constraints:</strong><br />
-            -2<sup>31</sup> <= x <= 2<sup>31</sup> - 1
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Recebo um número inteiro e preciso verificar se é palíndromo
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given an integer x, return true if x is a palindrome, and false
+              otherwise.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: x = 121<br />Output: true</code><br />
+              Explanation: 121 reads as 121 from left to right and from right to
+              left.<br /><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: x = -121<br />Output: false</code><br />
+              Explanation: From left to right, it reads -121. From right to
+              left, it becomes 121-. Therefore it is not a palindrome.<br /><br />
+              <strong>Example 3:</strong><br />
+              <code>Input: x = 10<br />Output: false</code><br />
+              Explanation: Reads 01 from right to left. Therefore it is not a
+              palindrome.<br /><br />
+              <strong>Constraints:</strong><br />
+              -2<sup>31</sup> <= x <= 2<sup>31</sup> - 1
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🚫 VERIFICAÇÃO INICIAL</h3>
-              <p>
-                O número é negativo? Se sim, nunca é palíndromo (por causa do
-                sinal '-')
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 CONVERSÃO</h3>
-              <p>Converter o número para string para facilitar a manipulação</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 REVERSÃO</h3>
-              <p>
-                Criar versão invertida da string usando split(), reverse(),
-                join()
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>⚖️ COMPARAÇÃO</h3>
-              <p>A string original é igual à invertida?</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>
-                Se iguais → true (é palíndromo)<br />Se diferentes → false (não
-                é palíndromo)
-              </p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Recebo um número inteiro e preciso verificar se é palíndromo
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🚫 VERIFICAÇÃO INICIAL</h3>
+                <p>
+                  O número é negativo? Se sim, nunca é palíndromo (por causa do
+                  sinal '-')
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 CONVERSÃO</h3>
+                <p>
+                  Converter o número para string para facilitar a manipulação
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 REVERSÃO</h3>
+                <p>
+                  Criar versão invertida da string usando split(), reverse(),
+                  join()
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>⚖️ COMPARAÇÃO</h3>
+                <p>A string original é igual à invertida?</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>
+                  Se iguais → true (é palíndromo)<br />Se diferentes → false
+                  (não é palíndromo)
+                </p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -334,66 +338,67 @@
           </div>
         </div>
 
-        <!-- 4. Missing Number (Soma) -->
         <div id="missing-number-sum" class="flowchart">
           <h2>4. Missing Number (Soma)</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given an array nums containing n distinct numbers in the range [0,
-            n], return the only number in the range that is missing from the
-            array.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: nums = [3,0,1]<br />Output: 2</code><br />
-            Explanation: n = 3 since there are 3 numbers, so all numbers are in
-            the range [0,3]. 2 is the missing number in the range since it does
-            not appear in nums.<br /><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: nums = [0,1]<br />Output: 2</code><br />
-            Explanation: n = 2 since there are 2 numbers, so all numbers are in
-            the range [0,2]. 2 is the missing number in the range since it does
-            not appear in nums.<br /><br />
-            <strong>Example 3:</strong><br />
-            <code>Input: nums = [9,6,4,2,3,5,7,0,1]<br />Output: 8</code><br />
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Recebo um array que deveria conter números de 0 a n, mas falta
-                um número
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given an array nums containing n distinct numbers in the range [0,
+              n], return the only number in the range that is missing from the
+              array.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: nums = [3,0,1]<br />Output: 2</code><br />
+              Explanation: n = 3 since there are 3 numbers, so all numbers are
+              in the range [0,3]. 2 is the missing number in the range since it
+              does not appear in nums.<br /><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: nums = [0,1]<br />Output: 2</code><br />
+              Explanation: n = 2 since there are 2 numbers, so all numbers are
+              in the range [0,2]. 2 is the missing number in the range since it
+              does not appear in nums.<br /><br />
+              <strong>Example 3:</strong><br />
+              <code>Input: nums = [9,6,4,2,3,5,7,0,1]<br />Output: 8</code
+              ><br />
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 INSIGHT</h3>
-              <p>
-                Se eu souber a soma esperada de 0 a n e subtrair a soma real,
-                encontro o número ausente!
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>📐 CÁLCULO ESPERADO</h3>
-              <p>
-                Usar fórmula da soma de PA: soma = n × (n + 1) ÷ 2<br />
-                onde n = tamanho do array
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>➕ SOMA REAL</h3>
-              <p>Somar todos os elementos presentes no array</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>➖ DIFERENÇA</h3>
-              <p>Calcular: soma_esperada - soma_real</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>A diferença é o número que está faltando!</p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Recebo um array que deveria conter números de 0 a n, mas falta
+                  um número
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 INSIGHT</h3>
+                <p>
+                  Se eu souber a soma esperada de 0 a n e subtrair a soma real,
+                  encontro o número ausente!
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>📐 CÁLCULO ESPERADO</h3>
+                <p>
+                  Usar fórmula da soma de PA: soma = n × (n + 1) ÷ 2<br />
+                  onde n = tamanho do array
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>➕ SOMA REAL</h3>
+                <p>Somar todos os elementos presentes no array</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>➖ DIFERENÇA</h3>
+                <p>Calcular: soma_esperada - soma_real</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>A diferença é o número que está faltando!</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -411,60 +416,61 @@
           </div>
         </div>
 
-        <!-- 5. Missing Number (XOR) -->
         <div id="missing-number-xor" class="flowchart">
           <h2>5. Missing Number (XOR)</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given an array nums containing n distinct numbers in the range [0,
-            n], return the only number in the range that is missing from the
-            array.<br /><br />
-            Solve it using bitwise XOR.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: nums = [3,0,1]<br />Output: 2</code><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: nums = [0,1]<br />Output: 2</code><br />
-            <strong>Example 3:</strong><br />
-            <code>Input: nums = [9,6,4,2,3,5,7,0,1]<br />Output: 8</code><br />
-            <strong>Constraints:</strong><br />
-            n == nums.length<br />
-            1 <= n <= 10<sup>4</sup><br />
-            0 <= nums[i] <= n<br />
-            All the numbers of nums are unique.
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Recebo um array que deveria conter números de 0 a n, mas falta
-                um número
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given an array nums containing n distinct numbers in the range [0,
+              n], return the only number in the range that is missing from the
+              array.<br /><br />
+              Solve it using bitwise XOR.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: nums = [3,0,1]<br />Output: 2</code><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: nums = [0,1]<br />Output: 2</code><br />
+              <strong>Example 3:</strong><br />
+              <code>Input: nums = [9,6,4,2,3,5,7,0,1]<br />Output: 8</code
+              ><br />
+              <strong>Constraints:</strong><br />
+              n == nums.length<br />
+              1 <= n <= 10<sup>4</sup><br />
+              0 <= nums[i] <= n<br />
+              All the numbers of nums are unique.
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 INSIGHT</h3>
-              <p>
-                Se eu aplicar XOR em todos os números de 0 a n e em seguida XOR
-                em todos os elementos do array, o resultado será o número que
-                falta!
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>⚙️ APLICAÇÃO DO XOR</h3>
-              <p>
-                result = 0<br />
-                Para cada número de 0 a n:<br />
-                - result ^= i<br />
-                Para cada elemento do array:<br />
-                - result ^= num
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>Retornar o result, que é o número que falta</p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Recebo um array que deveria conter números de 0 a n, mas falta
+                  um número
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 INSIGHT</h3>
+                <p>
+                  Se eu aplicar XOR em todos os números de 0 a n e em seguida
+                  XOR em todos os elementos do array, o resultado será o número
+                  que falta!
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>⚙️ APLICAÇÃO DO XOR</h3>
+                <p>
+                  result = 0<br />
+                  Para cada número de 0 a n:<br />
+                  - result ^= i<br />
+                  Para cada elemento do array:<br />
+                  - result ^= num
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>Retornar o result, que é o número que falta</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -482,51 +488,52 @@
           </div>
         </div>
 
-        <!-- 6. Missing Number (Sort) -->
         <div id="missing-number-sort" class="flowchart">
           <h2>6. Missing Number (Sort)</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given an array nums containing n distinct numbers in the range [0,
-            n], return the only number in the range that is missing from the
-            array.<br /><br />
-            Solve it by first sorting the array.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: nums = [3,0,1]<br />Output: 2</code><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: nums = [0,1]<br />Output: 2</code><br />
-            <strong>Example 3:</strong><br />
-            <code>Input: nums = [9,6,4,2,3,5,7,0,1]<br />Output: 8</code><br />
-            <strong>Constraints:</strong><br />
-            n == nums.length<br />
-            1 <= n <= 10<sup>4</sup><br />
-            0 <= nums[i] <= n<br />
-            All the numbers of nums are unique.
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Recebo um array que deveria conter números de 0 a n, mas falta
-                um número
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given an array nums containing n distinct numbers in the range [0,
+              n], return the only number in the range that is missing from the
+              array.<br /><br />
+              Solve it by first sorting the array.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: nums = [3,0,1]<br />Output: 2</code><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: nums = [0,1]<br />Output: 2</code><br />
+              <strong>Example 3:</strong><br />
+              <code>Input: nums = [9,6,4,2,3,5,7,0,1]<br />Output: 8</code
+              ><br />
+              <strong>Constraints:</strong><br />
+              n == nums.length<br />
+              1 <= n <= 10<sup>4</sup><br />
+              0 <= nums[i] <= n<br />
+              All the numbers of nums are unique.
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>📦 ORDENAÇÃO</h3>
-              <p>Ordenar o array em ordem crescente</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔍 BUSCA PELO NÚMERO FALTANTE</h3>
-              <p>Para i de 0 até array.length:</p>
-              <pre>Se array[i] !== i, então o número i está faltando</pre>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>Retornar o número que está faltando</p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Recebo um array que deveria conter números de 0 a n, mas falta
+                  um número
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>📦 ORDENAÇÃO</h3>
+                <p>Ordenar o array em ordem crescente</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔍 BUSCA PELO NÚMERO FALTANTE</h3>
+                <p>Para i de 0 até array.length:</p>
+                <pre>Se array[i] !== i, então o número i está faltando</pre>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>Retornar o número que está faltando</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -544,76 +551,78 @@
           </div>
         </div>
 
-        <!-- 7. Merge Sorted Array -->
         <div id="merge-sorted" class="flowchart">
           <h2>7. Merge Sorted Array</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            You are given two integer arrays nums1 and nums2, sorted in
-            non-decreasing order, and two integers m and n, representing the
-            number of elements in nums1 and nums2 respectively.<br /><br />
-            Merge nums2 into nums1 as one sorted array.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code
-              >Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3<br />Output:
-              [1,2,2,3,5,6]</code
-            ><br />
-            <strong>Example 2:</strong><br />
-            <code
-              >Input: nums1 = [1], m = 1, nums2 = [], n = 0<br />Output:
-              [1]</code
-            ><br />
-            <strong>Constraints:</strong><br />
-            nums1.length == m + n<br />
-            nums2.length == n<br />
-            0 <= m, n <= 200<br />
-            1 <= m + n <= 200<br />
-            -10<sup>9</sup> <= nums1[i], nums2[j] <= 10<sup>9</sup>
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Preciso juntar dois arrays já ordenados em um só, mantendo a
-                ordem
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              You are given two integer arrays nums1 and nums2, sorted in
+              non-decreasing order, and two integers m and n, representing the
+              number of elements in nums1 and nums2 respectively.<br /><br />
+              Merge nums2 into nums1 as one sorted array.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code
+                >Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3<br />Output:
+                [1,2,2,3,5,6]</code
+              ><br />
+              <strong>Example 2:</strong><br />
+              <code
+                >Input: nums1 = [1], m = 1, nums2 = [], n = 0<br />Output:
+                [1]</code
+              ><br />
+              <strong>Constraints:</strong><br />
+              nums1.length == m + n<br />
+              nums2.length == n<br />
+              0 <= m, n <= 200<br />
+              1 <= m + n <= 200<br />
+              -10<sup>9</sup> <= nums1[i], nums2[j] <= 10<sup>9</sup>
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 ESTRATÉGIA</h3>
-              <p>
-                Se eu comparar os menores elementos disponíveis de cada array,
-                sempre posso escolher o menor!
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>👆 PONTEIROS</h3>
-              <p>
-                Criar dois ponteiros: um para cada array (i para nums1, j para
-                nums2)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 COMPARAÇÃO</h3>
-              <p>
-                Enquanto ambos têm elementos:<br />
-                - Comparar nums1[i] com nums2[j]<br />
-                - Adicionar o menor ao resultado<br />
-                - Avançar o ponteiro correspondente
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🧹 LIMPEZA</h3>
-              <p>Adicionar elementos restantes de nums1 e nums2 (se houver)</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>Copiar o resultado de volta para nums1</p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso juntar dois arrays já ordenados em um só, mantendo a
+                  ordem
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 ESTRATÉGIA</h3>
+                <p>
+                  Se eu comparar os menores elementos disponíveis de cada array,
+                  sempre posso escolher o menor!
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>👆 PONTEIROS</h3>
+                <p>
+                  Criar dois ponteiros: um para cada array (i para nums1, j para
+                  nums2)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 COMPARAÇÃO</h3>
+                <p>
+                  Enquanto ambos têm elementos:<br />
+                  - Comparar nums1[i] com nums2[j]<br />
+                  - Adicionar o menor ao resultado<br />
+                  - Avançar o ponteiro correspondente
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🧹 LIMPEZA</h3>
+                <p>
+                  Adicionar elementos restantes de nums1 e nums2 (se houver)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>Copiar o resultado de volta para nums1</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -631,67 +640,67 @@
           </div>
         </div>
 
-        <!-- 8. Max Consecutive Ones -->
         <div id="max-consecutive" class="flowchart">
           <h2>8. Max Consecutive Ones</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given a binary array nums, return the maximum number of consecutive
-            1's in the array.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: nums = [1,1,0,1,1,1]<br />Output: 3</code><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: nums = [1,0,1,1,0,1]<br />Output: 2</code><br />
-            <strong>Constraints:</strong><br />
-            1 <= nums.length <= 10<sup>5</sup><br />
-            nums[i] is either 0 or 1.
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Preciso encontrar o maior número de 1s consecutivos em um array
-                de 0s e 1s
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given a binary array nums, return the maximum number of
+              consecutive 1's in the array.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: nums = [1,1,0,1,1,1]<br />Output: 3</code><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: nums = [1,0,1,1,0,1]<br />Output: 2</code><br />
+              <strong>Constraints:</strong><br />
+              1 <= nums.length <= 10<sup>5</sup><br />
+              nums[i] is either 0 or 1.
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 ESTRATÉGIA</h3>
-              <p>
-                Vou contar sequências de 1s e sempre guardar a maior sequência
-                vista até agora
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>📊 CONTADORES</h3>
-              <p>
-                currCount = 0 (sequência atual)<br />
-                maxCount = 0 (maior sequência)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 ITERAÇÃO</h3>
-              <p>
-                Para cada elemento do array:<br />
-                - Se for 1: currCount++<br />
-                - Se for 0: atualizar maxCount e zerar currCount
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>❓ FINAL DO ARRAY</h3>
-              <p>E se a maior sequência terminar no último elemento?</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>
-                Retornar Math.max(maxCount, currCount) para garantir que não
-                perdemos a última sequência
-              </p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso encontrar o maior número de 1s consecutivos em um
+                  array de 0s e 1s
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 ESTRATÉGIA</h3>
+                <p>
+                  Vou contar sequências de 1s e sempre guardar a maior sequência
+                  vista até agora
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>📊 CONTADORES</h3>
+                <p>
+                  currCount = 0 (sequência atual)<br />
+                  maxCount = 0 (maior sequência)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 ITERAÇÃO</h3>
+                <p>
+                  Para cada elemento do array:<br />
+                  - Se for 1: currCount++<br />
+                  - Se for 0: atualizar maxCount e zerar currCount
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>❓ FINAL DO ARRAY</h3>
+                <p>E se a maior sequência terminar no último elemento?</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>
+                  Retornar Math.max(maxCount, currCount) para garantir que não
+                  perdemos a última sequência
+                </p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -709,57 +718,58 @@
           </div>
         </div>
 
-        <!-- 9. Majority Element -->
         <div id="majority-element" class="flowchart">
           <h2>9. Majority Element</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given an array nums of size n, return the majority element.<br /><br />
-            The majority element is the element that appears more than ⌊n / 2⌋
-            times. You may assume that the majority element always exists in the
-            array.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: nums = [3,2,3]<br />Output: 3</code><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: nums = [2,2,1,1,1,2,2]<br />Output: 2</code><br />
-            <strong>Constraints:</strong><br />
-            n == nums.length<br />
-            1 <= n <= 5 * 10<sup>4</sup><br />
-            -10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INICIO</h3>
-              <p>
-                Encontrar o elemento que aparece mais da metade das vezes no
-                array
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given an array nums of size n, return the majority element.<br /><br />
+              The majority element is the element that appears more than ⌊n / 2⌋
+              times. You may assume that the majority element always exists in
+              the array.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: nums = [3,2,3]<br />Output: 3</code><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: nums = [2,2,1,1,1,2,2]<br />Output: 2</code><br />
+              <strong>Constraints:</strong><br />
+              n == nums.length<br />
+              1 <= n <= 5 * 10<sup>4</sup><br />
+              -10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 INSIGHT</h3>
-              <p>
-                Se um elemento aparece mais da metade das vezes, após ordenar o
-                array, ele SEMPRE estará na posição do meio!
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>📊 ORDENAÇÃO</h3>
-              <p>Ordenar o array em ordem crescente</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🎯 MEIO</h3>
-              <p>Calcular o índice do meio: Math.floor(nums.length / 2)</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>
-                O elemento na posição do meio é obrigatoriamente o majoritário!
-              </p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INICIO</h3>
+                <p>
+                  Encontrar o elemento que aparece mais da metade das vezes no
+                  array
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 INSIGHT</h3>
+                <p>
+                  Se um elemento aparece mais da metade das vezes, após ordenar
+                  o array, ele SEMPRE estará na posição do meio!
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>📊 ORDENAÇÃO</h3>
+                <p>Ordenar o array em ordem crescente</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🎯 MEIO</h3>
+                <p>Calcular o índice do meio: Math.floor(nums.length / 2)</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>
+                  O elemento na posição do meio é obrigatoriamente o
+                  majoritário!
+                </p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -777,66 +787,67 @@
           </div>
         </div>
 
-        <!-- 10. Intersection of Arrays -->
         <div id="intersection" class="flowchart">
           <h2>10. Intersection of Two Arrays</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given two integer arrays nums1 and nums2, return an array of their
-            intersection. Each element in the result must be unique and you may
-            return the result in any order.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: nums1 = [1,2,2,1], nums2 = [2,2]<br />Output: [2]</code
-            ><br />
-            <strong>Example 2:</strong><br />
-            <code
-              >Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]<br />Output:
-              [9,4]</code
-            ><br />
-            <strong>Constraints:</strong><br />
-            1 <= nums1.length, nums2.length <= 1000<br />
-            0 <= nums1[i], nums2[i] <= 1000
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Preciso encontrar elementos que aparecem em ambos os arrays (sem
-                duplicatas)
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given two integer arrays nums1 and nums2, return an array of their
+              intersection. Each element in the result must be unique and you
+              may return the result in any order.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code
+                >Input: nums1 = [1,2,2,1], nums2 = [2,2]<br />Output: [2]</code
+              ><br />
+              <strong>Example 2:</strong><br />
+              <code
+                >Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]<br />Output:
+                [9,4]</code
+              ><br />
+              <strong>Constraints:</strong><br />
+              1 <= nums1.length, nums2.length <= 1000<br />
+              0 <= nums1[i], nums2[i] <= 1000
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 ESTRATÉGIA</h3>
-              <p>
-                Se eu guardar elementos do primeiro array em um Set, posso
-                verificar rapidamente se um elemento do segundo está presente
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🗂️ SET</h3>
-              <p>Criar um Set com todos os elementos únicos de nums1</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 VERIFICAÇÃO</h3>
-              <p>
-                Para cada elemento de nums2:<br />
-                - Verificar se está no Set<br />
-                - Se sim: adicionar ao resultado e remover do Set
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>❓ POR QUE REMOVER?</h3>
-              <p>Removemos do Set para evitar duplicatas no resultado!</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>Array com elementos comuns, sem duplicatas</p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso encontrar elementos que aparecem em ambos os arrays
+                  (sem duplicatas)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 ESTRATÉGIA</h3>
+                <p>
+                  Se eu guardar elementos do primeiro array em um Set, posso
+                  verificar rapidamente se um elemento do segundo está presente
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🗂️ SET</h3>
+                <p>Criar um Set com todos os elementos únicos de nums1</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 VERIFICAÇÃO</h3>
+                <p>
+                  Para cada elemento de nums2:<br />
+                  - Verificar se está no Set<br />
+                  - Se sim: adicionar ao resultado e remover do Set
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>❓ POR QUE REMOVER?</h3>
+                <p>Removemos do Set para evitar duplicatas no resultado!</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>Array com elementos comuns, sem duplicatas</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -854,73 +865,74 @@
           </div>
         </div>
 
-        <!-- 9. First Bad Version -->
         <div id="first-bad-version" class="flowchart">
           <h2>11. First Bad Version</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            You are a product manager and currently leading a team to develop a
-            new product. Unfortunately, the latest version of your product fails
-            the quality check. Since each version is developed based on the
-            previous version, all the versions after a bad version are also
-            bad.<br /><br />
-            Suppose you have n versions [1, 2, ..., n] and you want to find out
-            the first bad one, which causes all the following ones to be bad.<br /><br />
-            You are given an API bool isBadVersion(version) which returns
-            whether version is bad. Implement a function to find the first bad
-            version. You should minimize the number of calls to the API.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: n = 5, bad = 4<br />Output: 4</code><br />
-            <strong>Constraints:</strong><br />
-            1 <= bad <= n <= 2<sup>31</sup> - 1
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Preciso encontrar a primeira versão ruim, minimizando chamadas à
-                API isBadVersion
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              You are a product manager and currently leading a team to develop
+              a new product. Unfortunately, the latest version of your product
+              fails the quality check. Since each version is developed based on
+              the previous version, all the versions after a bad version are
+              also bad.<br /><br />
+              Suppose you have n versions [1, 2, ..., n] and you want to find
+              out the first bad one, which causes all the following ones to be
+              bad.<br /><br />
+              You are given an API bool isBadVersion(version) which returns
+              whether version is bad. Implement a function to find the first bad
+              version. You should minimize the number of calls to the API.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: n = 5, bad = 4<br />Output: 4</code><br />
+              <strong>Constraints:</strong><br />
+              1 <= bad <= n <= 2<sup>31</sup> - 1
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 INSIGHT</h3>
-              <p>
-                Se uma versão é ruim, todas as seguintes também são. É uma
-                transição ordenada: bom → ruim
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🎯 BUSCA BINÁRIA</h3>
-              <p>Usar ponteiros left = 1, right = n</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 ITERAÇÃO</h3>
-              <p>
-                Enquanto left < right:<br />
-                - mid = (left + right) / 2<br />
-                - Testar isBadVersion(mid)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>❓ É RUIM?</h3>
-              <p>
-                Se isBadVersion(mid) == true:<br />
-                - A primeira versão ruim está em mid ou antes<br />
-                - right = mid<br /><br />
-                Se false:<br />
-                - A primeira versão ruim está depois<br />
-                - left = mid + 1
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>Quando left == right, encontramos a primeira versão ruim!</p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso encontrar a primeira versão ruim, minimizando chamadas
+                  à API isBadVersion
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 INSIGHT</h3>
+                <p>
+                  Se uma versão é ruim, todas as seguintes também são. É uma
+                  transição ordenada: bom → ruim
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🎯 BUSCA BINÁRIA</h3>
+                <p>Usar ponteiros left = 1, right = n</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 ITERAÇÃO</h3>
+                <p>
+                  Enquanto left < right:<br />
+                  - mid = (left + right) / 2<br />
+                  - Testar isBadVersion(mid)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>❓ É RUIM?</h3>
+                <p>
+                  Se isBadVersion(mid) == true:<br />
+                  - A primeira versão ruim está em mid ou antes<br />
+                  - right = mid<br /><br />
+                  Se false:<br />
+                  - A primeira versão ruim está depois<br />
+                  - left = mid + 1
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>Quando left == right, encontramos a primeira versão ruim!</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -938,70 +950,71 @@
           </div>
         </div>
 
-        <!-- 10. Fibonacci -->
         <div id="fibonacci" class="flowchart">
           <h2>12. Fibonacci (Recursivo)</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            The Fibonacci numbers, commonly denoted F(n) form a sequence, called
-            the Fibonacci sequence, such that each number is the sum of the two
-            preceding ones, starting from 0 and 1. That is,<br />
-            F(0) = 0, F(1) = 1<br />
-            F(n) = F(n - 1) + F(n - 2), for n > 1.<br /><br />
-            Given n, calculate F(n).<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: n = 2<br />Output: 1</code><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: n = 3<br />Output: 2</code><br />
-            <strong>Example 3:</strong><br />
-            <code>Input: n = 4<br />Output: 3</code><br />
-            <strong>Constraints:</strong><br />
-            0 <= n <= 30
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Preciso calcular o n-ésimo número de Fibonacci: F(n) = F(n-1) +
-                F(n-2)
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              The Fibonacci numbers, commonly denoted F(n) form a sequence,
+              called the Fibonacci sequence, such that each number is the sum of
+              the two preceding ones, starting from 0 and 1. That is,<br />
+              F(0) = 0, F(1) = 1<br />
+              F(n) = F(n - 1) + F(n - 2), for n > 1.<br /><br />
+              Given n, calculate F(n).<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: n = 2<br />Output: 1</code><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: n = 3<br />Output: 2</code><br />
+              <strong>Example 3:</strong><br />
+              <code>Input: n = 4<br />Output: 3</code><br />
+              <strong>Constraints:</strong><br />
+              0 <= n <= 30
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 DEFINIÇÃO</h3>
-              <p>
-                Fibonacci: cada número é a soma dos dois anteriores<br />
-                F(0) = 0, F(1) = 1, F(2) = 1, F(3) = 2, F(4) = 3...
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🛑 CASO BASE</h3>
-              <p>
-                Se n == 0 ou n == 1:<br />
-                Retornar n (F(0) = 0, F(1) = 1)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 RECURSÃO</h3>
-              <p>
-                Para n > 1:<br />
-                Retornar fib(n-1) + fib(n-2)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>⚠️ PROBLEMA</h3>
-              <p>Muitas recomputações! fib(5) calcula fib(3) várias vezes</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>
-                Funciona, mas ineficiente. Alternativa: bottom-up ou memoização
-              </p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso calcular o n-ésimo número de Fibonacci: F(n) = F(n-1)
+                  + F(n-2)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 DEFINIÇÃO</h3>
+                <p>
+                  Fibonacci: cada número é a soma dos dois anteriores<br />
+                  F(0) = 0, F(1) = 1, F(2) = 1, F(3) = 2, F(4) = 3...
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🛑 CASO BASE</h3>
+                <p>
+                  Se n == 0 ou n == 1:<br />
+                  Retornar n (F(0) = 0, F(1) = 1)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 RECURSÃO</h3>
+                <p>
+                  Para n > 1:<br />
+                  Retornar fib(n-1) + fib(n-2)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>⚠️ PROBLEMA</h3>
+                <p>Muitas recomputações! fib(5) calcula fib(3) várias vezes</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>
+                  Funciona, mas ineficiente. Alternativa: bottom-up ou
+                  memoização
+                </p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -1019,66 +1032,68 @@
           </div>
         </div>
 
-        <!-- 11. Contains Duplicate -->
         <div id="contains-duplicate" class="flowchart">
           <h2>13. Contains Duplicate</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given an integer array nums, return true if any value appears at
-            least twice in the array, and return false if every element is
-            distinct.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: nums = [1,2,3,1]<br />Output: true</code><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: nums = [1,2,3,4]<br />Output: false</code><br />
-            <strong>Example 3:</strong><br />
-            <code>Input: nums = [1,1,1,3,3,4,3,2,4,2]<br />Output: true</code
-            ><br />
-            <strong>Constraints:</strong><br />
-            1 <= nums.length <= 10<sup>5</sup><br />
-            -10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>Preciso verificar se existe algum número duplicado no array</p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given an integer array nums, return true if any value appears at
+              least twice in the array, and return false if every element is
+              distinct.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: nums = [1,2,3,1]<br />Output: true</code><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: nums = [1,2,3,4]<br />Output: false</code><br />
+              <strong>Example 3:</strong><br />
+              <code>Input: nums = [1,1,1,3,3,4,3,2,4,2]<br />Output: true</code
+              ><br />
+              <strong>Constraints:</strong><br />
+              1 <= nums.length <= 10<sup>5</sup><br />
+              -10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 ESTRATÉGIA</h3>
-              <p>
-                Se eu guardar os números já vistos, posso verificar rapidamente
-                se já vi o número atual
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🗂️ SET</h3>
-              <p>Criar um Set vazio para armazenar números já vistos</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 ITERAÇÃO</h3>
-              <p>
-                Para cada número do array:<br />
-                1. Verificar se já está no Set<br />
-                2. Se sim → encontrou duplicado!<br />
-                3. Se não → adicionar ao Set
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>❓ ENCONTROU?</h3>
-              <p>
-                Se encontrou duplicado → return true<br />
-                Se não encontrou → continuar
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>Se terminou o loop sem encontrar → return false</p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso verificar se existe algum número duplicado no array
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 ESTRATÉGIA</h3>
+                <p>
+                  Se eu guardar os números já vistos, posso verificar
+                  rapidamente se já vi o número atual
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🗂️ SET</h3>
+                <p>Criar um Set vazio para armazenar números já vistos</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 ITERAÇÃO</h3>
+                <p>
+                  Para cada número do array:<br />
+                  1. Verificar se já está no Set<br />
+                  2. Se sim → encontrou duplicado!<br />
+                  3. Se não → adicionar ao Set
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>❓ ENCONTROU?</h3>
+                <p>
+                  Se encontrou duplicado → return true<br />
+                  Se não encontrou → continuar
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>Se terminou o loop sem encontrar → return false</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -1096,68 +1111,69 @@
           </div>
         </div>
 
-        <!-- 12. Climbing Stairs -->
         <div id="climbing-stairs" class="flowchart">
           <h2>14. Climbing Stairs</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            You are climbing a staircase. It takes n steps to reach the top.<br /><br />
-            Each time you can either climb 1 or 2 steps. In how many distinct
-            ways can you climb to the top?<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: n = 2<br />Output: 2</code><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: n = 3<br />Output: 3</code><br />
-            <strong>Constraints:</strong><br />
-            1 <= n <= 45
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Preciso contar quantas maneiras existem de subir n degraus (1 ou
-                2 por vez)
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              You are climbing a staircase. It takes n steps to reach the
+              top.<br /><br />
+              Each time you can either climb 1 or 2 steps. In how many distinct
+              ways can you climb to the top?<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: n = 2<br />Output: 2</code><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: n = 3<br />Output: 3</code><br />
+              <strong>Constraints:</strong><br />
+              1 <= n <= 45
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 INSIGHT</h3>
-              <p>
-                Para chegar ao degrau n, posso vir do degrau n-1 (subindo 1) ou
-                do n-2 (subindo 2)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>📐 FÓRMULA</h3>
-              <p>
-                ways(n) = ways(n-1) + ways(n-2)<br />
-                É como Fibonacci!
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🛑 CASOS BASE</h3>
-              <p>
-                n = 1 → 1 maneira<br />
-                n = 2 → 2 maneiras (1+1 ou 2)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 BOTTOM-UP</h3>
-              <p>
-                Para n ≥ 3:<br />
-                - oneStepBefore = 2 (ways para n-1)<br />
-                - twoStepsBefore = 1 (ways para n-2)<br />
-                - Calcular ways = oneStepBefore + twoStepsBefore
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>Retornar o número total de maneiras calculado</p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso contar quantas maneiras existem de subir n degraus (1
+                  ou 2 por vez)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 INSIGHT</h3>
+                <p>
+                  Para chegar ao degrau n, posso vir do degrau n-1 (subindo 1)
+                  ou do n-2 (subindo 2)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>📐 FÓRMULA</h3>
+                <p>
+                  ways(n) = ways(n-1) + ways(n-2)<br />
+                  É como Fibonacci!
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🛑 CASOS BASE</h3>
+                <p>
+                  n = 1 → 1 maneira<br />
+                  n = 2 → 2 maneiras (1+1 ou 2)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 BOTTOM-UP</h3>
+                <p>
+                  Para n ≥ 3:<br />
+                  - oneStepBefore = 2 (ways para n-1)<br />
+                  - twoStepsBefore = 1 (ways para n-2)<br />
+                  - Calcular ways = oneStepBefore + twoStepsBefore
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>Retornar o número total de maneiras calculado</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -1175,76 +1191,78 @@
           </div>
         </div>
 
-        <!-- 13. Binary Search -->
         <div id="binary-search" class="flowchart">
           <h2>15. Binary Search</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            Given an array of integers nums which is sorted in ascending order,
-            and an integer target, write a function to search target in nums. If
-            target exists, then return its index. Otherwise, return -1.<br /><br />
-            You must write an algorithm with O(log n) runtime complexity.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: nums = [-1,0,3,5,9,12], target = 9<br />Output: 4</code
-            ><br />
-            <strong>Example 2:</strong><br />
-            <code
-              >Input: nums = [-1,0,3,5,9,12], target = 2<br />Output: -1</code
-            ><br />
-            <strong>Constraints:</strong><br />
-            1 <= nums.length <= 10<sup>4</sup><br />
-            -10<sup>4</sup> < nums[i], target < 10<sup>4</sup><br />
-            All the integers in nums are unique.
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Preciso encontrar rapidamente um elemento em um array ordenado
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              Given an array of integers nums which is sorted in ascending
+              order, and an integer target, write a function to search target in
+              nums. If target exists, then return its index. Otherwise, return
+              -1.<br /><br />
+              You must write an algorithm with O(log n) runtime complexity.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code
+                >Input: nums = [-1,0,3,5,9,12], target = 9<br />Output: 4</code
+              ><br />
+              <strong>Example 2:</strong><br />
+              <code
+                >Input: nums = [-1,0,3,5,9,12], target = 2<br />Output: -1</code
+              ><br />
+              <strong>Constraints:</strong><br />
+              1 <= nums.length <= 10<sup>4</sup><br />
+              -10<sup>4</sup> < nums[i], target < 10<sup>4</sup><br />
+              All the integers in nums are unique.
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 VANTAGEM</h3>
-              <p>
-                Array está ordenado! Posso descartar metade dos elementos a cada
-                comparação
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>👆 PONTEIROS</h3>
-              <p>
-                left = 0 (início do array)<br />
-                right = nums.length - 1 (fim do array)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 ITERAÇÃO</h3>
-              <p>
-                Enquanto left ≤ right:<br />
-                1. mid = (left + right) / 2<br />
-                2. Comparar nums[mid] com target
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>❓ COMPARAÇÃO</h3>
-              <p>
-                Se nums[mid] == target → encontrou!<br />
-                Se nums[mid] < target → left = mid + 1<br />
-                Se nums[mid] > target → right = mid - 1
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>
-                Se encontrou → retornar índice<br />
-                Se não encontrou → retornar -1
-              </p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso encontrar rapidamente um elemento em um array ordenado
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 VANTAGEM</h3>
+                <p>
+                  Array está ordenado! Posso descartar metade dos elementos a
+                  cada comparação
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>👆 PONTEIROS</h3>
+                <p>
+                  left = 0 (início do array)<br />
+                  right = nums.length - 1 (fim do array)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 ITERAÇÃO</h3>
+                <p>
+                  Enquanto left ≤ right:<br />
+                  1. mid = (left + right) / 2<br />
+                  2. Comparar nums[mid] com target
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>❓ COMPARAÇÃO</h3>
+                <p>
+                  Se nums[mid] == target → encontrou!<br />
+                  Se nums[mid] < target → left = mid + 1<br />
+                  Se nums[mid] > target → right = mid - 1
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>
+                  Se encontrou → retornar índice<br />
+                  Se não encontrou → retornar -1
+                </p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -1262,73 +1280,73 @@
           </div>
         </div>
 
-        <!-- 14. Stock Profit -->
         <div id="stock-profit" class="flowchart">
           <h2>16. Best Time to Buy and Sell Stock</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            You are given an array prices where prices[i] is the price of a
-            given stock on the i-th day.<br /><br />
-            You want to maximize your profit by choosing a single day to buy one
-            stock and choosing a different day in the future to sell that stock.
-            Return the maximum profit you can achieve from this transaction. If
-            you cannot achieve any profit, return 0.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code>Input: prices = [7,1,5,3,6,4]<br />Output: 5</code><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: prices = [7,6,4,3,1]<br />Output: 0</code><br />
-            <strong>Constraints:</strong><br />
-            1 <= prices.length <= 10<sup>5</sup><br />
-            0 <= prices[i] <= 10<sup>4</sup>
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Preciso calcular o lucro máximo comprando e vendendo uma ação
-                (comprar antes de vender)
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              You are given an array prices where prices[i] is the price of a
+              given stock on the i-th day.<br /><br />
+              You want to maximize your profit by choosing a single day to buy
+              one stock and choosing a different day in the future to sell that
+              stock. Return the maximum profit you can achieve from this
+              transaction. If you cannot achieve any profit, return 0.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code>Input: prices = [7,1,5,3,6,4]<br />Output: 5</code><br />
+              <strong>Example 2:</strong><br />
+              <code>Input: prices = [7,6,4,3,1]<br />Output: 0</code><br />
+              <strong>Constraints:</strong><br />
+              1 <= prices.length <= 10<sup>5</sup><br />
+              0 <= prices[i] <= 10<sup>4</sup>
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 ESTRATÉGIA</h3>
-              <p>
-                Quero comprar no menor preço possível e vender no maior preço
-                DEPOIS disso
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>📊 VARIÁVEIS</h3>
-              <p>
-                minPrice = Infinity (menor preço visto)<br />
-                maxProfit = 0 (maior lucro possível)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔄 ITERAÇÃO</h3>
-              <p>
-                Para cada preço no array:<br />
-                1. Atualizar minPrice se preço atual for menor<br />
-                2. Calcular lucro se vendesse hoje<br />
-                3. Atualizar maxProfit se lucro for maior
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>💡 LÓGICA</h3>
-              <p>
-                A cada dia, pergunto:<br />
-                "Esse é o melhor dia para comprar?" ou<br />
-                "Esse é o melhor dia para vender?"
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>Retornar o maxProfit calculado</p>
+            <div class="flow-container">
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso calcular o lucro máximo comprando e vendendo uma ação
+                  (comprar antes de vender)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 ESTRATÉGIA</h3>
+                <p>
+                  Quero comprar no menor preço possível e vender no maior preço
+                  DEPOIS disso
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>📊 VARIÁVEIS</h3>
+                <p>
+                  minPrice = Infinity (menor preço visto)<br />
+                  maxProfit = 0 (maior lucro possível)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔄 ITERAÇÃO</h3>
+                <p>
+                  Para cada preço no array:<br />
+                  1. Atualizar minPrice se preço atual for menor<br />
+                  2. Calcular lucro se vendesse hoje<br />
+                  3. Atualizar maxProfit se lucro for maior
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>💡 LÓGICA</h3>
+                <p>
+                  A cada dia, pergunto:<br />
+                  "Esse é o melhor dia para comprar?" ou<br />
+                  "Esse é o melhor dia para vender?"
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>Retornar o maxProfit calculado</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
@@ -1346,76 +1364,78 @@
           </div>
         </div>
 
-        <!-- 15. Average Salary -->
         <div id="average-salary" class="flowchart">
           <h2>17. Average Salary Excluding Min and Max</h2>
-          <div class="problem-summary complexity-box">
-            <strong>Problema:</strong><br />
-            You are given an array of unique integers salary where salary[i] is
-            the salary of the i-th employee.<br /><br />
-            Return the average salary of employees excluding the minimum and
-            maximum salary. Answers within 10<sup>-5</sup> of the actual answer
-            will be accepted.<br /><br />
-            <strong>Example 1:</strong><br />
-            <code
-              >Input: salary = [4000,3000,1000,2000]<br />Output:
-              2500.00000</code
-            ><br />
-            <strong>Example 2:</strong><br />
-            <code>Input: salary = [1000,2000,3000]<br />Output: 2000.00000</code
-            ><br />
-            <strong>Constraints:</strong><br />
-            3 <= salary.length <= 100<br />
-            1000 <= salary[i] <= 10<sup>6</sup><br />
-            All the integers of salary are unique.
-          </div>
-          <h3 class="fluxo-title">Fluxo</h3>
-          <div class="flow-container">
-            <div class="flow-step start">
-              <h3>🎯 INÍCIO</h3>
-              <p>
-                Preciso calcular a média salarial excluindo o menor e o maior
-                salário
-              </p>
+          <div class="problem-flow-row">
+            <div class="problem-summary complexity-box">
+              <strong>Problema:</strong><br />
+              You are given an array of unique integers salary where salary[i]
+              is the salary of the i-th employee.<br /><br />
+              Return the average salary of employees excluding the minimum and
+              maximum salary. Answers within 10<sup>-5</sup> of the actual
+              answer will be accepted.<br /><br />
+              <strong>Example 1:</strong><br />
+              <code
+                >Input: salary = [4000,3000,1000,2000]<br />Output:
+                2500.00000</code
+              ><br />
+              <strong>Example 2:</strong><br />
+              <code
+                >Input: salary = [1000,2000,3000]<br />Output: 2000.00000</code
+              ><br />
+              <strong>Constraints:</strong><br />
+              3 <= salary.length <= 100<br />
+              1000 <= salary[i] <= 10<sup>6</sup><br />
+              All the integers of salary are unique.
             </div>
-            <div class="arrow"></div>
-            <div class="flow-step decision">
-              <h3>🤔 ESTRATÉGIA</h3>
-              <p>
-                Vou encontrar min e max, somar todos os salários, subtrair min e
-                max, e dividir pelo restante
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>🔍 ENCONTRAR MIN/MAX</h3>
-              <p>
-                minSalary = Math.min(...salary)<br />
-                maxSalary = Math.max(...salary)
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>➕ SOMA TOTAL</h3>
-              <p>totalSum = salary.reduce((acc, val) => acc + val, 0)</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>➖ EXCLUIR MIN/MAX</h3>
-              <p>sumWithoutMinMax = totalSum - minSalary - maxSalary</p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step process">
-              <h3>➗ CALCULAR MÉDIA</h3>
-              <p>
-                count = salary.length - 2<br />
-                average = sumWithoutMinMax / count
-              </p>
-            </div>
-            <div class="arrow"></div>
-            <div class="flow-step end">
-              <h3>✅ RESULTADO</h3>
-              <p>Retornar a média calculada</p>
+            <div class="flow-container">
+              <h3 class="fluxo-title">Fluxo</h3>
+              <div class="flow-step start">
+                <h3>🎯 INÍCIO</h3>
+                <p>
+                  Preciso calcular a média salarial excluindo o menor e o maior
+                  salário
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step decision">
+                <h3>🤔 ESTRATÉGIA</h3>
+                <p>
+                  Vou encontrar min e max, somar todos os salários, subtrair min
+                  e max, e dividir pelo restante
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>🔍 ENCONTRAR MIN/MAX</h3>
+                <p>
+                  minSalary = Math.min(...salary)<br />
+                  maxSalary = Math.max(...salary)
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>➕ SOMA TOTAL</h3>
+                <p>totalSum = salary.reduce((acc, val) => acc + val, 0)</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>➖ EXCLUIR MIN/MAX</h3>
+                <p>sumWithoutMinMax = totalSum - minSalary - maxSalary</p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step process">
+                <h3>➗ CALCULAR MÉDIA</h3>
+                <p>
+                  count = salary.length - 2<br />
+                  average = sumWithoutMinMax / count
+                </p>
+              </div>
+              <div class="arrow"></div>
+              <div class="flow-step end">
+                <h3>✅ RESULTADO</h3>
+                <p>Retornar a média calculada</p>
+              </div>
             </div>
           </div>
           <div class="complexity">
