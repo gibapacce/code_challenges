@@ -1,3 +1,7 @@
+      .flow-step pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
 * {
         margin: 0;
         padding: 0;
@@ -117,6 +121,8 @@
         width: 100%;
         position: relative;
         font-size: 0.92rem;
+        word-break: break-word;
+        overflow-wrap: break-word;
       }
 
       .flow-step h3 {
