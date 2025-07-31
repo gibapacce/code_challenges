@@ -393,3 +393,14 @@ body {
   color: #3a3a3a;
   border-left-color: #b7e0f7;
 }
+
+/* Box arredondado para problema, fluxo e complexidade */
+.complexity-box {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* igual ao body */
+  border-radius: 20px;
+  padding: 28px 22px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 16px rgba(180, 180, 200, 0.13);
+  transition: box-shadow 0.2s;
+}
