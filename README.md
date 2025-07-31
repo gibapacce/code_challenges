@@ -4,7 +4,8 @@ Este repositório contém soluções para diversos problemas clássicos de entre
 
 ## Estrutura do Projeto
 
-- `index.html` e `style.css`: Arquivos para visualização ou interface web (se aplicável).
+- `index.html`: Interface visual que apresenta o fluxograma de pensamento para resolução dos problemas (não executa os algoritmos).
+- `style.css`: Estilos para a interface web.
 - `scripts.js`: Script geral para manipulação ou execução dos exercícios (se aplicável).
 - Pastas de problemas em `challenges/` (exemplo: `binary_search/`, `climbing_stairs/`, etc):
   - `problem.txt`: Enunciado do problema.
