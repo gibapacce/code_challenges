@@ -64,7 +64,3 @@ Servir como material de estudo e referência para entrevistas técnicas (algorit
 - Crie uma branch: `git checkout -b feat/novo-problema`
 - Commit: `git commit -m "feat: solução para <problema>"`
 - Abra um Pull Request com descrição do problema e abordagem
-
-## Licença
-
-Defina aqui a licença do projeto (por exemplo, MIT), se aplicável.
